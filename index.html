@@ -82,8 +82,9 @@
 
             header{
                 
-                display: flex;
-                justify-content: space-between;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
                 align-items: center;
                 padding: 1%;
                 background-color: #fff;
@@ -91,6 +92,22 @@
                 height: 8vh;
                 z-index: 1;
             }
+            .menuHamburguesa{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .headerButtons{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+
 
             ul{
                 position: relative; 
@@ -264,6 +281,76 @@
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+.siguenos{
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: space-around;
+    align-items: center;
+}
+.siguenosFotos{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap:1vh;
+}
+.siguenosFoto{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.siguenosFoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.siguenosTexto{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.siguenosRS{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.siguenosRS a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siguenosRS img{
+    width: 30%;
+}
+
+.recibeOfertas{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recibeOfertas h2{
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+.recibeOfertas input{
+   
+    
+}
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-width: 600px) {
@@ -281,6 +368,9 @@
     .prev, .next {
         width: 10vw;
         font-size: 5vw;
+    }
+    .siguenos {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -313,7 +403,7 @@
             <img src="https://cdn-icons-png.flaticon.com/512/80/80040.png" >
         </div>
 
-        <div>
+        <div class="headerButtons">
             <a href="login.html"><button>Log in</button></a>
             <button><img></button>
         </div>
@@ -353,11 +443,11 @@
         <section class="carrusel">
             <div class="carrusel-images">
                 <div class="carrusel-image">
-                    <img src="https://sastresbarcelona.com/wp-content/uploads/2023/01/IMG_1076_resize.jpg"  alt="Image 1">
+                    <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwfa5b4143/images/hi-res/I23/Hombre/Sudadera/Sudadera_Harvard_498222110/IVO/498222110_IVO_1.jpg?sw=965&sh=1287"  alt="Image 1">
                 </div>
 
                 <div class="carrusel-image">
-                    <img src="https://e00-telva.uecdn.es/assets/multimedia/imagenes/2022/05/29/16537882294548.jpg"  alt="Image 2">
+                    <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwfa5b4143/images/hi-res/I23/Hombre/Sudadera/Sudadera_Harvard_498222110/IVO/498222110_IVO_1.jpg?sw=965&sh=1287"  alt="Image 2">
                 </div>
 
                 <div class="carrusel-image">
@@ -384,6 +474,40 @@
             </div>
             <div class="prev" onclick="changeSlide(-1)">❮</div>
             <div class="next" onclick="changeSlide(1)">❯</div>
+        </section>
+
+        <section class="siguenos">
+            <div class="siguenosFotos">
+                <div class="siguenosFoto">
+                    <img src="https://i.blogs.es/8d564c/pitti-m-str-s23-0083/1366_2000.jpg"  alt="Image 3">
+                </div>
+                <div class="siguenosFoto">
+                    <img src="https://i.blogs.es/8d564c/pitti-m-str-s23-0083/1366_2000.jpg"  alt="Image 3">
+                </div>
+                <div class="siguenosFoto">
+                    <img src="https://i.blogs.es/8d564c/pitti-m-str-s23-0083/1366_2000.jpg"  alt="Image 3">
+                </div>
+            </div>
+            <div class="siguenosTexto">
+                <h2>Siguenos en nuestras redes sociales</h2>
+                <div class="siguenosRS">
+                    <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="recibeOfertas">
+
+            <h2>Recibe nuestras ofertas!</h2>
+            <form action="">
+                <input type="text" placeholder="Email">
+                <button>Enviar</button>
+            </form>
+
+
         </section>
             
 
@@ -416,7 +540,25 @@
     </main>
 
     <footer>
-
+        <section class="ayuda">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Envios</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </section>
+        <section class="nosotros">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Nuestras tiendas</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Aviso legal</a></li>
+            </ul>
+        </section>
+        
     </footer>
    
 </body>
