@@ -1,0 +1,94 @@
+
+body{
+    margin: 0; 
+    
+    
+ }
+ 
+
+ 
+ 
+ .Login{
+     margin-top: 20vh;
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     font-size: 1.3rem;
+     
+     
+ }
+ .Login div{
+     padding: 2%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 95%;
+     height: 100%;
+ }
+ .inicioSesion{
+     border-right: 0.2rem solid black;
+ }
+
+ h2{
+     margin-bottom: 2vh;
+ }
+ form{
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content:center ;
+     align-items: center;  
+     
+ }
+ input{
+     border: 0.2rem solid black;
+     margin: 1vh;
+     padding: 1vh;
+     font-size: 1rem; 
+ }
+ button{
+     border: 0.2rem solid black;
+     margin: 1vh;
+     padding: 1vh;
+     background-color: black;
+     color: white;
+     font-weight: bold;
+     font-size: 1rem; 
+ }
+ button:hover{
+     background-color: white;
+     color: black;
+ }
+ @media (max-width: 600px) {
+     .Login{
+
+         margin-top: 5vh;
+         width: 100%;
+         height: 100%;
+         display: grid;
+         grid-template-columns: 1fr;
+         font-size: 1.1rem; 
+         
+     }
+     .Login div{
+         padding: 2%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 95%;
+         height: 100%;
+     }
+     .inicioSesion{
+         border-right: none;
+     }
+
+     input{
+         font-size: 0.8rem;
+     }
+     button{
+         font-size: 0.8rem;
+     }
+ }

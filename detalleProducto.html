@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/categoriaHombre.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <style>
+            body{
+               margin: 0; 
+               
+               
+            }
+            
+
+            
+           
+
+            .detalleProducto{
+                margin-left: 5%;
+                margin-top: 5vh;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                width: 90%;
+            }
+            .detalleProductoImagen{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+            }
+            .detalleProductoImagen img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 0.2rem solid black;
+            }
+            .detalleProductoTexto{
+               font-size: 1.5rem;
+            }
+
+            @media (max-width: 600px) {
+                .detalleProducto{
+                    grid-template-columns: 1fr;
+                }
+                
+                .detalleProductoTexto{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            
+            
+        </style>
+        <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header>
@@ -36,158 +82,24 @@
         </div>
     </header>
     <main>
-
-            <h1>HOMBRE</h1>
         
-            <div class="categoriaHombre">
-                
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwfa5b4143/images/hi-res/I23/Hombre/Sudadera/Sudadera_Harvard_498222110/IVO/498222110_IVO_1.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Sudadera Harvard</h3>
-                            <p>18.99€</p>
-                        </div>
-                    </a>
+        
+            <div class="detalleProducto">
+                <div class="detalleProductoImagen">
+                    <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwcd6e50d9/images/hi-res/I23/Hombre/Camisas/Polera_Panama_Dye_1115123021/BLA/1115123021_BLA_1.jpg?sw=965&sh=1287" alt="">
+                    <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw75625adc/images/hi-res/I23/Hombre/Camisas/Polera_Panama_Dye_1115123021/BLA/1115123021_BLA_3.jpg?sw=965&sh=1287" alt="">
                 </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw571f6607/images/hi-res/I23/Hombre/Americanas/Americana_Classic_Twill_769223021_MAR/769223021_MAR_4.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Americana Classic Twill</h3>
-                            <p>49.99€</p>
-                        </div>
-                    </a>
-     
+                <div class="detalleProductoTexto">
+                    <h1>Polera Panama Dye</h1>      
+                    <h3>17.99€</h3>
+                    <p>XS</p>
+                    <p>S</p>
+                    <p>M</p>
+                    <p>L</p>
+                    <p>XL</p>
+                    <button>Añadir</button>
                 </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw50b02230/images/hi-res/I23/Hombre/Pantalones/Pantalon_Garreth_613223005/BEI/613223005_BEI.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Pantalón Garret</h3>
-                            <p>25.49€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw440f2c13/images/hi-res/I23/Hombre/Chalecos/Chaleco_Niro_643223001/BEI/643223001_BEI.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Chalecco Niro</h3>
-                            <p>17.49€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwc9a63172/images/hi-res/V23/V23_Trajes/Traje_Twill_769123001-301_AZU/769123001/769123001_AZU_1.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Traje Twill</h3>
-                            <p>102.49€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw38b8d9bb/images/hi-res/Trajes/Traje_Twill_769223010_310_MAR/769223010_MAR_11.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Traje Speed</h3>
-                            <p>110.49€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwc97b176d/images/hi-res/I23/Hombre/Cazadoras/Cazadora_Antler_643223009/BUR/643223009_BUR_4.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Cazadora Antler</h3>
-                            <p>34.99€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw1365f45f/images/hi-res/I23/Hombre/Sudadera/Sudadera_Contrast_498222116/MAR/498222116_MAR.jpg?sw=710&sh=947">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Sudadera Contrast</h3>
-                            <p>19.99€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw6e80717d/images/hi-res/I23/Hombre/Jerseis/Jersey_Alec_2147222030/BUR/2147222030_BUR_1.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Jersey Alec</h3>
-                            <p>23.49€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw53b21845/images/hi-res/I23/Hombre/Camisas/Polera_Oxford_Solid_1115123015/BEI/1115123015_BEI_1.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Polera Oxford Solid</h3>
-                            <p>17.99€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dwf0934147/images/hi-res/I23/Trajes/Traje_Fil_A_Fil_769223009_309_GRI/769223009_GRI_1.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Traje Fil A Fil</h3>
-                            <p>140.30€</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="producto">
-                    <a href="detalleProducto.html">
-                        <div class="productoImagen">
-                            <img src="https://www.alvaromoreno.com/dw/image/v2/BGHK_PRD/on/demandware.static/-/Sites-amoreno_master_catalog/default/dw9abc1912/images/hi-res/I23/Hombre/Polos/Polo_Punto_621123011/MAR/621123011_MAR.jpg?sw=965&sh=1287">
-                        
-                        </div>
-                        <div class="productoTexto">
-                            <h3>Polo Punto</h3>
-                            <p>14.49€</p>
-                        </div>
-                    </a>
-                </div>
-               
-    
+
             </div>
         
         
