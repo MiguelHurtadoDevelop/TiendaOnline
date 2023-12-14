@@ -211,9 +211,7 @@ body{
      justify-content: center;
      align-items: center;
  }
- .siguenosRS img{
-     width: 60%;
- }
+ 
 
  .recibeOfertas{
      width: 100%;
@@ -268,8 +266,9 @@ font-size: 0.8rem;
 
 display: grid;
 grid-template-columns: 1fr;
-
-
+}
+.siguenosRS{
+    width: 100%;
 }
 .siguenosFotos{
 width: 100%;
