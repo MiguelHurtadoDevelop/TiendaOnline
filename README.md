@@ -1,1 +1,1 @@
-ps://miguelhurtadodevelop.github.io/TiendaOnline/
+https://miguelhurtadodevelop.github.io/TiendaOnline/
